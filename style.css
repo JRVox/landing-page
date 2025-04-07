@@ -6,17 +6,21 @@ body {
     margin: 0;
 }
 
-header {
+header,
+footer {
     background-color: #1f2937;
+}
+
+header {
     display: flex;
     flex-direction: column;
-    flex: 1;
+    padding: 18px 64px 64px;
+    gap: 48px;
 }
 
 .top {
     display: flex;
     justify-content: space-between;
-    padding: 12px 48px;
 }
 
 #logo {
@@ -24,9 +28,19 @@ header {
     color: #f9faf8;
 }
 
+.hero,
+a {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
 .link {
     display: flex;
     gap: 24px;
+}
+
+a {
+    text-decoration: none;
 }
 
 .container {
@@ -38,11 +52,7 @@ h1 {
     font-size: 48px;
     color: #f9faf8;
     font-weight: 900;
-}
-
-.hero {
-    font-size: 18px;
-    color: #e5e7eb;
+    margin: 0;
 }
 
 button {
@@ -55,14 +65,24 @@ main {
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding: 0 64px;
 }
 
 .image {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.quote {
+.chunk {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-color: blue;
+    border: 5px;
+}
+
+#quote {
     background-color: #e5e7eb;
     display: flex;
     flex-direction: column;
@@ -77,6 +97,6 @@ q {
 }
 
 footer {
-    background-color: #1f2937;
-   
+    color: #f9faf8;
+    text-align: center;
 }
