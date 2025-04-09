@@ -16,12 +16,20 @@ header {
     flex-direction: column;
     padding: 18px 64px 64px;
     gap: 48px;
+    flex: 1;
 }
 
 .top {
     display: flex;
     justify-content: space-between;
 }
+
+.bottom {
+    display: flex;
+    align-items: center;
+    gap: 20%;
+}
+
 
 #logo {
     font-size: 24px;
@@ -58,19 +66,20 @@ h1 {
 button {
     background-color: #3882f6;
     color: white;
-    border-radius: 25px;
+    border-radius: 5px;
+    padding: 5px 30px;
 }
 
 main {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 0 64px;
+    padding: 18px 64px 64px;
 }
 
 .image {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -78,15 +87,19 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-color: blue;
-    border: 5px;
+    align-items: center;
+    text-align: center;
+}
+
+section {
+    padding: 24px 64px 18px;
+    align-items: center;
 }
 
 #quote {
     background-color: #e5e7eb;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
+    
 }
 
 q {
@@ -94,6 +107,34 @@ q {
     color: #1f2937;
     font-style: italic;
     font-weight: 300;
+}
+
+#quote p {
+    text-align: end;
+}
+
+
+#action div {
+    background-color: #3882f6;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+#action div div {
+    display: flex;
+    flex-direction: column;
+}
+
+h3,
+#action p {
+    margin: 0;
+    color: white;
+}
+
+#action button {
+    border-color: white;
 }
 
 footer {
